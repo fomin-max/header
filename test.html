@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+      :root {
+        --height: 64px;
+        --width: 80%;
+        --bg-color: #7a7a7a;
+        --margin-side-size: 20px;
+        --margin-between-size: 50px;
+        --font-family: Roboto;
+        --welcome-font-size: 20px;
+        --welcome-font-weight: bold;
+        --time-font-size: 36px;
+        --time-font-weight: normal;
+      }
+
+      body {
+        font-family: var(--font-family);
+      }
+
+      .outer {
+        width: var(--width);
+        height: var(--height);
+        line-height: var(--height);
+        background-color: var(--bg-color);
+        margin: auto;
+      }
+
+      .inner {
+        margin-right: var(--margin-side-size);
+        margin-left: var(--margin-side-size);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .overflow {
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .welcome {
+        font-size: var(--welcome-font-size);
+        font-weight: var(--welcome-font-weight);
+      }
+
+      .time {
+        margin-left: var(--margin-between-size);
+        font-size: var(--time-font-size);
+        font-weight: var(--time-font-weight);
+        float: right;
+        text-transform: uppercase;
+      }
+    </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner">
+      <span class="welcome overflow">Welcome, username!</span>
+      <span class="time overflow">11:41 msk</span>
+    </div>
+  </div>
+</body>
+</html>
